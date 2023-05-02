@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TutorialsNinja Automation Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="TutorialsNinja Tests(failed)">
+    <classes>
+      <class name="com.ninjatutorials.qa.testcases.Login">
+        <methods>
+          <include name="verifyLoginWithValidEmailAndInvalidPassword"/>
+          <include name="verifyLoginWithoutCredentiials"/>
+          <include name="setUp"/>
+          <include name="verifyLoginWithInvalidCredentials"/>
+          <include name="verifyLoginWithInvalidEmailAndValidPassword"/>
+          <include name="tearDown"/>
+          <include name="verifyLoginWithValidCredentials"/>
+        </methods>
+      </class> <!-- com.ninjatutorials.qa.testcases.Login -->
+      <class name="com.ninjatutorials.qa.testcases.Search">
+        <methods>
+          <include name="VerifySearchWithoutAnyProduct"/>
+          <include name="VerifySearchWithInValidProduct"/>
+          <include name="VerifySearchWithValidProduct"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.ninjatutorials.qa.testcases.Search -->
+      <class name="com.ninjatutorials.qa.testcases.Register">
+        <methods>
+          <include name="verifyRegisteringAnAccountWithMandatoryFields"/>
+          <include name="verifyRegisteringAccountWithExistingEmailAddress"/>
+          <include name="verifyRegisteringAccountByProvidingAllFields"/>
+          <include name="setUp"/>
+          <include name="verifyRegisteringAccountWithoutFillingAnyDetails"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.ninjatutorials.qa.testcases.Register -->
+    </classes>
+  </test> <!-- TutorialsNinja Tests(failed) -->
+</suite> <!-- Failed suite [TutorialsNinja Automation Suite] -->
